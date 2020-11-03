@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 2</title>
+        <style media="screen">
+        body {
+          text-align: center;
+        }
+        form {
+          display: inline-block;
+        }
+        .image {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 200px;
+          height: auto;
+        }
+        </style>
+    </head>
+
+    <body>
+            <h1>Xena Events Hot Air Balloon Event</h1>
+            <h3>from Feb 28th 2017 onwards for 5 days</h3>
+            <img src="Resources\hotairballoons.gif" alt="Hot Air Balloon Riding Event" class="image"><br><br><br><br>
+            <h4>Reagister here for the fun ride!</h4>
+            <form>
+                <table>
+                    <tr>
+                        <td>Name: </td>
+                        <td><input type="text" placeholder="Name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Age: </td>
+                        <td><input type="number" placeholder="Age" min="18" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email ID: </td>
+                        <td><input type="email" placeholder="Email ID" required></td>
+                    </tr>
+                    <tr>
+                        <td>City: </td>
+                        <td><input type="text" placeholder="City" list="cities" required></td>
+                    </tr>
+                </table><br>
+                <td><input type="submit" value="submit"></td>
+                <datalist id="cities">
+                    <option value="Rajkot">
+                    <option value="Vijag">
+                    <option value="Bangalore">
+                </datalist>
+            </form>
+
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+
+        <style>
+            body {
+                text-align: center;
+            }
+            canvas {
+                padding: 20px;
+                background-color: #00A2DD
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Board of Control for Cricket in India</h1>
+        <h3>Batting Statistics</h3>
+        <br>
+        <canvas id="bcci" width="550" height="410">Your browser does not support the HTML5 canvas tag.</canvas>
+
+        <script>
+            var c = document.getElementById('bcci');
+            var ctx = c.getContext('2d');
+            ctx.font = "15px Arial";
+            ctx.lineWidth = 1.5;
+
+            ctx.fillText("Runs",40,20);
+            ctx.fillText("240-",0,20);
+            ctx.fillText("210-",0,70);
+            ctx.fillText("180-",0,120);
+            ctx.fillText("150-",0,170);
+            ctx.fillText("120-",0,220);
+            ctx.fillText("60--",0,270);
+            ctx.fillText("30--",0,320);
+
+            ctx.moveTo(30,400);
+            ctx.lineTo(30,0);
+            ctx.moveTo(0,370);
+            ctx.lineTo(500,370);
+            ctx.stroke();
+
+            ctx.fillText("|",130,380);
+            ctx.fillText("5",130,400);
+            ctx.fillText("|",230,380);
+            ctx.fillText("10",230,400);
+            ctx.fillText("|",330,380);
+            ctx.fillText("15",330,400);
+            ctx.fillText("|",430,380);
+            ctx.fillText("20",430,400);
+            ctx.fillText("Overs",450,360);
+
+            ctx.moveTo(130, 303);
+            ctx.lineTo(230, 245);
+            ctx.lineTo(330, 187);
+            ctx.stroke();
+        </script>
+    </body>
+</html>

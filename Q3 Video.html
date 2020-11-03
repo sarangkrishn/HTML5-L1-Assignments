@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3</title>
+        <style>
+        .header img {
+          float: left;
+          height: 100px;
+        }
+        .header h1 {
+          position: relative;
+          left: 10px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div id="a" class="header">
+            <img src="Resources\playerlogo.png" alt="logo" />
+            <h1 style=font-size:100px>Awesome Online Videos</h1>
+        </div>
+        <div id="b" class="video">
+		<h1>Video Of The Week</h1>
+            <video id="video" width="480">
+                <source src="Resources\vidoftheweek.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video><br>
+            <button onclick="play()">Play video</button>
+            <button onclick="pause()">Pause video</button>
+        </div>
+    </body>
+
+    <script>
+        var video = document.getElementById('video');
+        function play() {
+            video.play();
+        }
+        function pause() {
+            video.pause();
+        }
+    </script>
+</html>
